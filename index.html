@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  <link href="CSS/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        
+   <div class="logo-circle">
+    <img src="Images/Home page/Logo.png" alt="Logo" class="logo-img">
+    <div class="logo-text">Home Services</div>
+  </div>
+  <div class="search-bar">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search">
+  </div>
+  <div class="d-flex">
+    <div class="top-icons mr-4">
+      <i class="fas fa-phone"></i>
+      <div><a href="contact.html"><h3>Contact</h3></a></div>
+    </div>
+    <div class="top-icons mr-4">
+      <i class="fas fa-calendar-plus"></i>
+      <div><a href="#aaa" class="show-btn" onclick="showOverlay()"><h3>Book</h3></a></div>
+    </div>
+    <div class="top-icons">
+      <i class="fas fa-user-circle"></i>
+      <div><a href="log.html"><h3>Login</h3></a></div>
+    </div>
+  </div>
+</div>
+  
+<div class="services-container">
+  <div class="service-item">
+    <img src="Images/Home page/3.png" alt="General Cleaning">
+    <a href="general.html" class="service-title"><h4 class="general">General<br>Cleaning</h4></a>
+  </div>
+  <div class="service-item">
+    <img src="Images/Home page/2.png" alt="AC Cleaning">
+    <div class="service-title"><h4>AC<br>Cleaning</h4></div>
+  </div>
+  <div class="service-item">
+    <img src="Images/Home page/4.png" alt="Home Salon">
+    <div class="service-title"><h4>Home<br>Salon</h4></div>
+  </div>
+  <div class="service-item">
+    <img src="Images/Home page/5.png" alt="Handyman Services">
+    <div class="service-title"><h4>Handyman<br>Services</h4></div>
+  </div>
+  <div class="service-item">
+    <img src="Images/Home page/1.png" alt="Healthcare at Home">
+    <div class="service-title"><h4>Healthcare<br>at Home</h4></div>
+  </div>
+</div>
+
+  <div class="aaa" id="aaa">
+    <div class="container">
+      <div class="services-container">
+  <div class="service-item1">
+    <img src="Images/Home page/3.png" alt="General Cleaning">
+    <a href="general.html" class="service-title"><h4 class="general">General<br>Cleaning</h4></a>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/2.png" alt="AC Cleaning">
+    <div class="service-title"><h4>AC<br>Cleaning</h4></div>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/4.png" alt="Home Salon">
+    <div class="service-title"><h4>Home<br>Salon</h4></div>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/5.png" alt="Handyman Services">
+    <div class="service-title"><h4>Handyman<br>Services</h4></div>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/1.png" alt="Healthcare at Home">
+    <div class="service-title"><h4>Healthcare<br>at Home</h4></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <script>
+    function showOverlay() {
+      document.getElementById('aaa').style.display = 'flex';
+    }
+
+    function hideOverlay() {
+      document.getElementById('aaa').style.display = 'none';
+    }
+  </script>
+    <h2 class="text-center">There are so many reasons to love Home Services!</h2>
+    <div class="features-section">
+
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="Images/Home page/12.png" alt="Top Rated Professionals">
+    <h3>Top rated<br>professionals</h3>
+    <p class="highlight">Our professionals are reliable & well-trained, with an average rating of 4.78 out of 5!</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="Images/Home page/15.png" alt="Same-day Availability">
+    <h3>Same-day<br>availability</h3>
+    <p class="highlight">Book in less than 60 seconds, and even select same-day slots.</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="Images/Home page/13.png" alt="Value for Money">
+    <h3>Top quality, value<br>for money services</h3>
+    <p class="highlight">Equipped with top tools, our services are always priced with you in mind.</p>
+  </div>
+
+</div>
+
+    <h2 class="text-center fw-bold">Top picks for you!!</h2>
+
+<div id="pointerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="Images/Home page/home1.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 1">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Home page/home2.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 2">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Home page/home3.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 3">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Home page/home1.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 4">
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="Images/Home page/home2.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 5">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Home page/home3.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 6">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Home page/home3.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 3">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Home page/home1.png" class="d-block w-100 pointer-slide" data-slide="1" alt="Image 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const carousel = document.querySelector('#pointerCarousel');
+  const carouselInstance = bootstrap.Carousel.getOrCreateInstance(carousel);
+
+  document.querySelectorAll('.pointer-slide').forEach(img => {
+    img.style.cursor = 'pointer'; // Add pointer cursor
+    img.addEventListener('click', () => {
+      carouselInstance.next(); // Slide to next on image click
+    });
+  });
+
+</script>
+
+<h1 class="text-center m-5">What customers say about our services</h1>
+
+<div id="pointer" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-4 gservice">
+          <img src="Images/Home page/6.png" class="d-block pointer-slide" data-slide="1" alt="Image 1" weidth="100px" height="400px">
+          <h2 class="text-center m-3">Handman Services</h2>
+          <h4 class="text-center"><q>Booked a plumber through Home services website-Smooth experience! On-time,polite,quick fixand clear pricing. Will definitely use again!</q></h4>
+          <h5 class="text-center">Adam, Chennai<br>⭐⭐⭐⭐⭐ 4.8</h5>
+        </div>
+        <div class="col-md-3 gservice">
+          <img src="Images/Home page/17.png" class="d-block pointer-slide" data-slide="1" alt="Image 1" weidth="50px" height="400px">
+          <h2 class="text-center m-3">Home Salon</h2>
+          <h4 class="text-center"><q>Booked a plumber through Home services website-Smooth experience! On-time,polite,quick fixand clear pricing. Will definitely use again!</q></h4>
+          <h5 class="text-center">Adam, Chennai<br>⭐⭐⭐⭐⭐ 4.8</h5>
+        </div>
+        <div class="col-md-4 gservice">
+          <img src="Images/Home page/7.png" class="d-block pointer-slide" data-slide="1" alt="Image 1" weidth="100px" height="400px">
+          <h2 class="text-center m-3">General Cleaning</h2>
+          <h4 class="text-center"><q>Booked a plumber through Home services website-Smooth experience! On-time,polite,quick fixand clear pricing. Will definitely use again!</q></h4>
+          <h5 class="text-center">Adam, Chennai<br>⭐⭐⭐⭐⭐ 4.8</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+        <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-4 gservice">
+          <img src="Images/Home page/7.png" class="d-block pointer-slide" data-slide="1" alt="Image 1" weidth="100px" height="400px">
+          <h2 class="text-center m-3">General Cleaning</h2>
+          <h4 class="text-center"><q>Booked a plumber through Home services website-Smooth experience! On-time,polite,quick fixand clear pricing. Will definitely use again!</q></h4>
+          <h5 class="text-center">Adam, Chennai<br>⭐⭐⭐⭐⭐ 4.8</h5>
+        </div>
+        <div class="col-md-3 gservice">
+          <img src="Images/Home page/17.png" class="d-block pointer-slide" data-slide="1" alt="Image 1" weidth="50px" height="400px">
+          <h2 class="text-center m-3">Home Salon</h2>
+          <h4 class="text-center"><q>Booked a plumber through Home services website-Smooth experience! On-time,polite,quick fixand clear pricing. Will definitely use again!</q></h4>
+          <h5 class="text-center">Adam, Chennai<br>⭐⭐⭐⭐⭐ 4.8</h5>
+        </div>
+        <div class="col-md-4 gservice">
+          <img src="Images/Home page/6.png" class="d-block pointer-slide" data-slide="1" alt="Image 1" weidth="100px" height="400px">
+          <h2 class="text-center m-3">Handman Services</h2>
+          <h4 class="text-center"><q>Booked a plumber through Home services website-Smooth experience! On-time,polite,quick fixand clear pricing. Will definitely use again!</q></h4>
+          <h5 class="text-center">Adam, Chennai<br>⭐⭐⭐⭐⭐ 4.8</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+  const carousel1 = document.querySelector('#pointer');
+  const carouselInstance1 = bootstrap.Carousel.getOrCreateInstance(carousel1);
+
+  document.querySelectorAll('.pointer-slide').forEach(img => {
+    img.style.cursor = 'pointer'; // Add pointer cursor
+    img.addEventListener('click', () => {
+      carouselInstance1.next(); // Slide to next on image click
+    });
+  });
+
+</script>
+<div class="botbar">
+    <div class="row">
+        <div class="col-md-9">
+            <p class="text">Manage all to-dos with a single tap!</p>
+            <p class="text1">Download our app</p>
+            <p class="text2">now for a better experience!</p>
+            <img class="play" src="Images/Home page/play.png" alt="play store" width="450px">
+        </div>
+        <div class="col-md-3">
+            <img src="Images/Home page/14.png" alt="logo" width="300px">
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+  <!-- Logo and Tagline -->
+  <div>
+    <div class="logo-circle1">
+    <img src="Images/Home page/Logo.png" alt="Logo"  width="100px">
+    <div class="logo-text">Home Services</div>
+  </div>
+    <p>Expert Services.<br>Anytime,<br>Anywhere</p>
+  </div>
+
+  <!-- Services -->
+  <div>
+    <table>
+      <th><h4>Services</h4></th>
+      <tr><td><h5>General Cleaning</h5></td></tr>
+      <tr><td><h5>AC Cleaning</h5></td></tr>
+      <tr><td><h5>Home Salon</h5></td></tr>
+      <tr><td><h5>Handyman Services</h5></td></tr>
+      <tr><td><h5>Healthcare at home</h5></td></tr>
+    </table>
+  </div>
+
+  <!-- Quick links -->
+  <div>
+    <table>
+      <th><h4>Quick Links</h4></th>
+      <tr><td><h5>Privacy Policy</h5></td></tr>
+      <tr><td><h5>Terms and Conditions</h5></td></tr>
+      <tr><td><h5>Help and Support</h5></td></tr>
+    </table>
+  </div>
+
+  <!-- Contact -->
+  <div>
+    <h3>Contact us</h3>
+    <div class="contact-item">
+      <span class="icon">🎧</span>
+      <span>+91 1234567</span>
+    </div>
+    <div class="contact-item">
+      <span class="icon">✉️</span>
+      <span>info@home services.com</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

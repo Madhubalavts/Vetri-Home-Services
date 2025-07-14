@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  <link href="CSS/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        
+   <div class="logo-circle">
+    <img src="Images/Home page/Logo.png" alt="Logo" class="logo-img">
+    <div class="logo-text">Home Services</div>
+  </div>
+  <div class="search-bar">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search">
+  </div>
+  <div class="d-flex">
+    <div class="top-icons mr-4">
+      <i class="fas fa-phone"></i>
+      <div><a href="contact.html"><h3>Contact</h3></a></div>
+    </div>
+    <div class="top-icons mr-4">
+      <i class="fas fa-calendar-plus"></i>
+      <div><a href="#aaa" class="show-btn" onclick="showOverlay()"><h3>Book</h3></a></div>
+    </div>
+    <div class="top-icons">
+      <i class="fas fa-user-circle"></i>
+      <div><a href="log.html"><h3>Login</h3></a></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="aaa" id="aaa">
+    <div class="container">
+      <div class="services-container">
+  <div class="service-item1">
+    <img src="Images/Home page/3.png" alt="General Cleaning">
+    <a href="general.html" class="service-title"><h4 class="general">General<br>Cleaning</h4></a>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/2.png" alt="AC Cleaning">
+    <div class="service-title"><h4>AC<br>Cleaning</h4></div>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/4.png" alt="Home Salon">
+    <div class="service-title"><h4>Home<br>Salon</h4></div>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/5.png" alt="Handyman Services">
+    <div class="service-title"><h4>Handyman<br>Services</h4></div>
+  </div>
+  <div class="service-item1">
+    <img src="Images/Home page/1.png" alt="Healthcare at Home">
+    <div class="service-title"><h4>Healthcare<br>at Home</h4></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+<div class="container">
+  <!-- Left Side with Illustration -->
+  <div class="left">
+    <img src="Images/Home page/Sign Up.png" alt="Service Illustration" width="100%">
+  </div>
+
+  <!-- Right Side Login Form -->
+  <div class="right">
+    <h1>Sign In</h1>
+    <h4>Sign In with Email address</h4>
+
+    <form onsubmit="return validateForm()">
+      <div class="form-group">
+        <input type="email" placeholder="Email address*" required>
+      </div>
+      <div class="form-group password-wrapper">
+        <input type="password" placeholder="Password*" required>
+        <span class="toggle-password" onclick="togglePassword()"></span>
+      </div>
+
+      <button type="submit" class="btn fs-5">Sign In</button>
+
+      <div class="signup-text">
+        Don’t have an account?
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<div class="botbar">
+    <div class="row">
+        <div class="col-md-9">
+            <p class="text">Manage all to-dos with a single tap!</p>
+            <p class="text1">Download our app</p>
+            <p class="text2">now for a better experience!</p>
+            <img class="play" src="Images/Home page/play.png" alt="play store" width="450px">
+        </div>
+        <div class="col-md-3">
+            <img src="Images/Home page/14.png" alt="logo" width="300px">
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+  <!-- Logo and Tagline -->
+  <div>
+    <div class="logo-circle1">
+    <img src="Images/Home page/Logo.png" alt="Logo"  width="100px">
+    <div class="logo-text">Home Services</div>
+  </div>
+    <p>Expert Services.<br>Anytime,<br>Anywhere</p>
+  </div>
+
+  <!-- Services -->
+  <div>
+    <table>
+      <th><h4>Services</h4></th>
+      <tr><td><h5>General Cleaning</h5></td></tr>
+      <tr><td><h5>AC Cleaning</h5></td></tr>
+      <tr><td><h5>Home Salon</h5></td></tr>
+      <tr><td><h5>Handyman Services</h5></td></tr>
+      <tr><td><h5>Healthcare at home</h5></td></tr>
+    </table>
+  </div>
+
+  <!-- Quick links -->
+  <div>
+    <table>
+      <th><h4>Quick Links</h4></th>
+      <tr><td><h5>Privacy Policy</h5></td></tr>
+      <tr><td><h5>Terms and Conditions</h5></td></tr>
+      <tr><td><h5>Help and Support</h5></td></tr>
+    </table>
+  </div>
+
+  <!-- Contact -->
+  <div>
+    <h3>Contact us</h3>
+    <div class="contact-item">
+      <span class="icon">🎧</span>
+      <span>+91 1234567</span>
+    </div>
+    <div class="contact-item">
+      <span class="icon">✉️</span>
+      <span>info@home services.com</span>
+    </div>
+  </div>
+</footer>
+<script>
+  function togglePassword() {
+    const passwordInput = document.getElementById("password");
+    const type = passwordInput.type === "password" ? "text" : "password";
+    passwordInput.type = type;
+  }
+
+  function validateForm() {
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    if (!email || !password) {
+      alert("Please fill in both fields.");
+      return false;
+    }
+    alert("Sign-in successful! (Simulated)");
+    return false; // Prevent actual submission for demo
+  }
+
+
+    function showOverlay() {
+      document.getElementById('aaa').style.display = 'flex';
+    }
+
+    function hideOverlay() {
+      document.getElementById('aaa').style.display = 'none';
+    }
+
+</script>
+</body>
+</html>
